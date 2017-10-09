@@ -1,0 +1,31 @@
+use_frameworks!
+platform :ios, '9.0'
+
+source 'https://github.com/iOSModularization/AHFMSpecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+
+target 'AHFMCategoryVC_Example' do
+  pod 'AHFMCategoryVC', :path => '../'
+  
+  
+  pod 'AHFMModuleManager'
+  pod 'AHServiceRouter'
+  
+  pod 'AHFMCategoryVCServices'
+  pod 'AHFMCategoryVCManager'
+  
+  pod 'AHFMKeywordVCServices'
+  pod 'AHFMKeywordVC'
+  pod 'AHFMKeywordVCManager'
+  
+  pod 'AHFMServices'
+  pod 'AHFMBottomPlayerServices'
+  
+  
+  target 'AHFMCategoryVC_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
