@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'AHFMCategoryVC'
-  s.version          = '0.1.11'
-  s.summary          = 'A short description of AHFMCategoryVC.'
+s.name             = 'AHFMCategoryVC'
+s.version          = '0.1.12'
+s.summary          = 'A short description of AHFMCategoryVC.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,28 +17,29 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
+s.description      = <<-DESC
 TODO: Add long description of the pod here.
-                       DESC
+DESC
 
-  s.homepage         = 'https://github.com/iOSModularization/AHFMCategoryVC'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'ivsall2012' => 'ivsall2012@gmail.com' }
-  s.source           = { :'https://github.com/iOSModularization/AHFMCategoryVC.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+s.homepage         = 'https://github.com/iOSModularization/AHFMCategoryVC'
+# s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+s.license          = { :type => 'MIT', :file => 'LICENSE' }
+s.author           = { 'ivsall2012' => 'ivsall2012@gmail.com' }
+s.source           = { :git => 'https://github.com/iOSModularization/AHFMCategoryVC.git', :tag => s.version.to_s }
+# s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+s.ios.deployment_target = '9.0'
 
-  s.source_files = 'AHFMCategoryVC/Classes/**/*'
-  
-    s.resource_bundles = {
-        'AHFMCategoryVC' => ['AHFMCategoryVC/Assets/*']
-    }
+s.source_files = 'AHFMCategoryVC/Classes/**/*'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+s.resource_bundles = {
+'AHFMCategoryVC' => ['AHFMCategoryVC/Assets/*']
+}
+
+# s.public_header_files = 'Pod/Classes/**/*.h'
+# s.frameworks = 'UIKit', 'MapKit'
 s.dependency 'BundleExtension'
 s.dependency 'UIImageExtension'
 s.dependency 'AHDraggableLayout'
 end
+
